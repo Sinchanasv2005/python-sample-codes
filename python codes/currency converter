@@ -1,0 +1,6 @@
+from currency_converter import CurrencyConverter
+from datetime import date
+c = CurrencyConverter()
+amount=float(input("enter the amount "))
+new = c.convert( '4','EUR', 'INR',date= date (2025,1,12))
+print(new)
