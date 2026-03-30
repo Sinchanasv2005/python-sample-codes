@@ -7,4 +7,4 @@ while i <= num:
         total = total + i       # add current even i to the running sum
     i = i + 1             # don’t forget to increment i
 
-print("Sum of even numbers is:")
+print("Sum of even numbers is:",total)
