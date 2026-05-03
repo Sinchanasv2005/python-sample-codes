@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n = 3;
+    for (int i = 1; i <= n; i++) {//row outer loop
+        for (int j = 1; j <= n - i; j++) 
+            cout << " ";//inner loop space
+        for (int k = 1; k <= i; k++) 
+            cout << "*";//number of star after space
+        for (int l = i - 1; l >= 1; l--) 
+            cout << "*";//mirror image
+            cout<<endl;}
+        for (int i = n-1; i>=1; i--){//bottom printing from incre to decre//n-1 means 3-1=2 only 2 line 
+        for (int j = 1; j <= n - i; j++) 
+            cout << " ";//space
+        for (int k = 1; k <= i; k++) 
+            cout << "*";
+        for (int l = i - 1; l >= 1; l--) 
+            cout << "*";//mirror
+            cout << endl;
+        }
+    }
+Output
+      *
+   * * *
+ * * * * *
+   * * * 
+     *
